@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="166.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LostController">
+   <children>
+      <Label alignment="CENTER" layoutX="121.0" prefHeight="55.0" prefWidth="153.0" text="You lost!" textFill="RED">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score" alignment="CENTER" layoutX="92.0" layoutY="45.0" prefHeight="44.0" prefWidth="212.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="newGame" layoutX="33.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#newGame" prefHeight="33.0" prefWidth="121.0" text="New Game" />
+      <Button fx:id="quit" layoutX="246.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#quit" prefHeight="33.0" prefWidth="121.0" text="Quit" />
+      <Label fx:id="highestScore" alignment="CENTER" layoutX="90.0" layoutY="99.0" prefHeight="22.0" prefWidth="212.0" text="Label" />
+      <Button fx:id="reset" layoutX="307.0" layoutY="98.0" mnemonicParsing="false" onMouseClicked="#resetHighestScore" prefHeight="25.0" prefWidth="59.0" text="Reset" />
+   </children>
+</Pane>
